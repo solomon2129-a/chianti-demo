@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chianti Ristorante &amp; Wine Bar — Bangalore</title>
+  <meta name="description" content="Experience Simply Authentic Italian Cuisine at Chianti Ristorante & Wine Bar, Indiranagar, Bangalore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&family=Libre+Baskerville:ital,wght@1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__bar">
+
+      <!-- Logo -->
+      <a href="#home" class="nav__logo">
+        <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="1"/>
+          <path d="M10 26 C10 20 14 14 18 12 C22 14 26 20 26 26" stroke="currentColor" stroke-width="1" fill="none"/>
+          <line x1="18" y1="12" x2="18" y2="8" stroke="currentColor" stroke-width="1"/>
+          <circle cx="18" cy="7" r="1.5" fill="currentColor"/>
+        </svg>
+        <div class="nav__logo-text">
+          <span class="nav__logo-main">Chianti</span>
+          <span class="nav__logo-sub">Ristorante &amp; Wine Bar</span>
+        </div>
+      </a>
+
+      <!-- Center links -->
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="#story"    class="nav__link">Our Story</a>
+        <a href="#menu"     class="nav__link">The Menu</a>
+        <a href="#whatsnew" class="nav__link">What's New?</a>
+        <a href="#contact"  class="nav__link">Contact Us</a>
+      </nav>
+
+      <!-- Right CTA -->
+      <div class="nav__right">
+        <a href="#reservations" class="nav__cta">
+          <span>Reservations</span>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="navDrawer">
+      <a href="#story"        class="nav__drawer-link">Our Story</a>
+      <a href="#menu"         class="nav__drawer-link">The Menu</a>
+      <a href="#whatsnew"     class="nav__drawer-link">What's New?</a>
+      <a href="#contact"      class="nav__drawer-link">Contact Us</a>
+      <a href="#reservations" class="nav__drawer-cta">Reservations</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Full-bleed image — NO gradient -->
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=85&auto=format&fit=crop"
+        alt="Chianti Ristorante interior"
+        id="heroBgImg"
+      />
+      <!-- Solid dark veil — NO gradient -->
+      <div class="hero__veil"></div>
+    </div>
+
+    <div class="hero__body">
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-dot"></span>
+        Bangalore &nbsp;·&nbsp; Est. 2011
+        <span class="hero__eyebrow-dot"></span>
+      </p>
+      <h1 class="hero__headline">
+        <span class="hero__line hero__line--1">Experience</span>
+        <span class="hero__line hero__line--2">Simply <em>Authentic</em></span>
+        <span class="hero__line hero__line--3">Italian Cuisine</span>
+      </h1>
+      <div class="hero__rule"></div>
+      <div class="hero__ctas">
+        <a href="#reservations" class="btn btn--gold">Reserve a Table</a>
+        <a href="#menu"         class="btn btn--ghost">View the Menu &darr;</a>
+      </div>
+    </div>
+
+    <!-- Floating info cards -->
+    <div class="hero__stat hero__stat--1">
+      <span class="hero__stat-num">13</span>
+      <span class="hero__stat-label">Years of Tradition</span>
+    </div>
+    <div class="hero__stat hero__stat--2">
+      <span class="hero__stat-num">4.8</span>
+      <span class="hero__stat-label">★ on Zomato</span>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="hero__scroll-label">Scroll</span>
+      <div class="hero__scroll-pill"></div>
+      <div class="hero__scroll-arrows">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       MARQUEE STRIP
+  ══════════════════════════════════════════════════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Handmade Pasta</span><span class="marquee-dot">✦</span>
+      <span>Authentic Recipes</span><span class="marquee-dot">✦</span>
+      <span>Italian Wine Bar</span><span class="marquee-dot">✦</span>
+      <span>Bangalore's Finest</span><span class="marquee-dot">✦</span>
+      <span>13 Years of Craft</span><span class="marquee-dot">✦</span>
+      <span>Chef-Driven Kitchen</span><span class="marquee-dot">✦</span>
+      <span>Simply Authentic</span><span class="marquee-dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Handmade Pasta</span><span class="marquee-dot">✦</span>
+      <span>Authentic Recipes</span><span class="marquee-dot">✦</span>
+      <span>Italian Wine Bar</span><span class="marquee-dot">✦</span>
+      <span>Bangalore's Finest</span><span class="marquee-dot">✦</span>
+      <span>13 Years of Craft</span><span class="marquee-dot">✦</span>
+      <span>Chef-Driven Kitchen</span><span class="marquee-dot">✦</span>
+      <span>Simply Authentic</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       STORY SECTION
+  ══════════════════════════════════════════════════ -->
+  <section class="story" id="story">
+    <div class="container story__grid">
+
+      <!-- Images — stacked editorial -->
+      <div class="story__media reveal reveal--left">
+        <div class="story__img-a">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80&auto=format&fit=crop" alt="Handcrafted pasta at Chianti" />
+        </div>
+        <div class="story__img-b">
+          <img src="https://images.unsplash.com/photo-1574031377791-2a732edc1a72?w=700&q=80&auto=format&fit=crop" alt="Chef at Chianti kitchen" />
+        </div>
+        <div class="story__badge">
+          <div class="story__badge-inner">
+            <span class="story__badge-num">13</span>
+            <span class="story__badge-word">years</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="story__copy reveal reveal--right">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="story__headline">A Taste of<br><em>Tradition</em></h2>
+        <div class="story__rule">
+          <span></span><i>✦</i><span></span>
+        </div>
+        <p class="story__body">
+          At Chianti Ristorante &amp; Wine Bar, we don't just serve food — we bring
+          people together over the joy of true Italian dining. For over 13 years,
+          we've celebrated time-honoured recipes, crafted with fresh local
+          ingredients and select Italian imports, to deliver bold, authentic
+          flavours in every plate.
+        </p>
+        <p class="story__body">
+          Step inside, and you're transported to a classic Italian trattoria —
+          rustic charm, warm lighting, and the aroma of freshly baked bread
+          creating a space made for memories.
+        </p>
+
+        <!-- Stats row -->
+        <div class="story__stats">
+          <div class="story__stat-item">
+            <span class="story__stat-n" data-target="13">0</span>
+            <span class="story__stat-l">Years Open</span>
+          </div>
+          <div class="story__stat-divider"></div>
+          <div class="story__stat-item">
+            <span class="story__stat-n" data-target="48">0</span>
+            <span class="story__stat-l">Menu Items</span>
+          </div>
+          <div class="story__stat-divider"></div>
+          <div class="story__stat-item">
+            <span class="story__stat-n" data-target="12000">0</span>
+            <span class="story__stat-l">Happy Guests</span>
+          </div>
+        </div>
+
+        <a href="#menu" class="btn btn--wine">Discover Our Menu &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       SIGNATURE DISHES — AUTO-LOOPING CAROUSEL
+  ══════════════════════════════════════════════════ -->
+  <section class="dishes" id="menu">
+    <div class="container dishes__header reveal">
+      <span class="eyebrow eyebrow--light">The Menu</span>
+      <h2 class="dishes__headline">Signature <em>Dishes</em></h2>
+      <p class="dishes__sub">Every plate is a conversation between craft and ingredient.</p>
+    </div>
+
+    <!-- Full-width carousel — no container constraint -->
+    <div class="carousel" id="carousel">
+      <div class="carousel__track" id="carouselTrack">
+
+        <div class="c-card">
+          <div class="c-card__img">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop" alt="Ravioli del Chianti" />
+          </div>
+          <div class="c-card__body">
+            <span class="c-card__cat">Pasta · Signature</span>
+            <h3 class="c-card__name">Ravioli del Chianti</h3>
+            <p class="c-card__desc">Ricotta &amp; spinach ravioli in sage brown butter with aged Pecorino.</p>
+            <span class="c-card__price">₹ 620</span>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <div class="c-card__img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80&auto=format&fit=crop" alt="Fettuccine Carbonara" />
+          </div>
+          <div class="c-card__body">
+            <span class="c-card__cat">Pasta · Classic</span>
+            <h3 class="c-card__name">Fettuccine Carbonara</h3>
+            <p class="c-card__desc">Silky Roman egg and Pecorino sauce, crisp pancetta — no cream, only craft.</p>
+            <span class="c-card__price">₹ 580</span>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <div class="c-card__img">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80&auto=format&fit=crop" alt="Margherita al Forno" />
+          </div>
+          <div class="c-card__body">
+            <span class="c-card__cat">Pizza · Wood-fired</span>
+            <h3 class="c-card__name">Margherita al Forno</h3>
+            <p class="c-card__desc">San Marzano tomatoes, fresh buffalo mozzarella, Genovese basil, EVOO.</p>
+            <span class="c-card__price">₹ 540</span>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <div class="c-card__img">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80&auto=format&fit=crop" alt="Barolo Wine Pairing" />
+          </div>
+          <div class="c-card__body">
+            <span class="c-card__cat">Wine Bar</span>
+            <h3 class="c-card__name">Barolo Sommelier Pick</h3>
+            <p class="c-card__desc">Curated Barolo and Chianti Classico, hand-selected for our Bangalore cellar.</p>
+            <span class="c-card__price">₹ 980</span>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <div class="c-card__img">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800&q=80&auto=format&fit=crop" alt="Tiramisu Classico" />
+          </div>
+          <div class="c-card__body">
+            <span class="c-card__cat">Dolci</span>
+            <h3 class="c-card__name">Tiramisù Classico</h3>
+            <p class="c-card__desc">House mascarpone, espresso-soaked savoiardi, fine cocoa dusting. Made daily.</p>
+            <span class="c-card__price">₹ 320</span>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <div class="c-card__img">
+            <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=800&q=80&auto=format&fit=crop" alt="Antipasti della Casa" />
+          </div>
+          <div class="c-card__body">
+            <span class="c-card__cat">Antipasti</span>
+            <h3 class="c-card__name">Antipasti della Casa</h3>
+            <p class="c-card__desc">Bruschetta, marinated olives, cured meats, and house-baked focaccia to begin.</p>
+            <span class="c-card__price">₹ 480</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel__btn carousel__btn--prev" id="cPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button class="carousel__btn carousel__btn--next" id="cNext" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <div class="carousel__progress" id="carouselProgress" aria-hidden="true">
+      <div class="carousel__progress-fill" id="carouselFill"></div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       WHAT'S NEW
+  ══════════════════════════════════════════════════ -->
+  <section class="whatsnew" id="whatsnew">
+    <div class="container">
+
+      <div class="whatsnew__header reveal">
+        <span class="eyebrow">From Our Kitchen</span>
+        <h2 class="whatsnew__headline">Craving the latest<br>from <em>Chianti?</em></h2>
+        <p class="whatsnew__sub">
+          Seasonal specials, upcoming events, new dish launches,
+          and behind-the-scenes glimpses into our kitchen.
+        </p>
+        <a href="#contact" class="btn btn--brass-outline">See What's Cooking</a>
+      </div>
+
+      <!-- Masonry grid -->
+      <div class="masonry">
+        <div class="m-item m-item--tall reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80&auto=format&fit=crop" alt="Seasonal menu" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Seasonal Menu</span>
+            <p>Spring launches — fresh handmade pasta and garden-herb risottos.</p>
+          </div>
+        </div>
+        <div class="m-item reveal reveal--delay-1">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80&auto=format&fit=crop" alt="Chef's special" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Chef's Table</span>
+            <p>Chef's weekly special — one dish, made with obsession.</p>
+          </div>
+        </div>
+        <div class="m-item m-item--wide reveal reveal--delay-1">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1000&q=80&auto=format&fit=crop" alt="Pasta craft" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Craft</span>
+            <p>Every pasta rolled by hand. Every morning, before service.</p>
+          </div>
+        </div>
+        <div class="m-item m-item--tall reveal reveal--delay-2">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=700&q=80&auto=format&fit=crop" alt="Wine bar" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Wine Bar</span>
+            <p>New arrivals from Tuscany and Piedmont — curated for Bangalore.</p>
+          </div>
+        </div>
+        <div class="m-item reveal reveal--delay-2">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&q=80&auto=format&fit=crop" alt="Pizza" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">New Dish</span>
+            <p>Our wood-fired pizza is back on the weekend menu.</p>
+          </div>
+        </div>
+        <div class="m-item reveal reveal--delay-1">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=700&q=80&auto=format&fit=crop" alt="Desserts" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Dolci</span>
+            <p>New dessert menu — because endings matter too.</p>
+          </div>
+        </div>
+        <div class="m-item m-item--wide reveal reveal--delay-2">
+          <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=1000&q=80&auto=format&fit=crop" alt="Antipasti" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Behind the Scenes</span>
+            <p>Inside our kitchen on a Friday night — controlled chaos and pure love.</p>
+          </div>
+        </div>
+        <div class="m-item reveal">
+          <img src="https://images.unsplash.com/photo-1574031377791-2a732edc1a72?w=700&q=80&auto=format&fit=crop" alt="Chef" loading="lazy" />
+          <div class="m-item__caption">
+            <span class="m-item__tag">Meet the Chef</span>
+            <p>Chef Varsha — 13 years in our kitchen, still learning from the dough.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       RESERVATIONS FEATURE
+  ══════════════════════════════════════════════════ -->
+  <section class="reserve-section" id="reservations">
+    <div class="reserve-section__img">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80&auto=format&fit=crop" alt="Chianti dining room" />
+      <!-- Dark panel overlay — solid, NO gradient -->
+      <div class="reserve-section__panel"></div>
+    </div>
+    <div class="reserve-section__content reveal">
+      <span class="eyebrow eyebrow--light">Reserve Your Evening</span>
+      <h2 class="reserve-section__headline">Every table<br>tells a <em>story.</em></h2>
+      <p class="reserve-section__body">
+        An evening at Chianti is unlike any other. Let us set the table.
+      </p>
+      <a href="mailto:chiantibangalore@gmail.com" class="btn btn--gold">Book a Table</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__bg-word" aria-hidden="true">Amore</div>
+    <div class="container">
+      <div class="testimonials__header reveal">
+        <span class="eyebrow eyebrow--light">What Our Guests Say</span>
+        <h2 class="testimonials__headline">Stories from<br>Our <em>Table</em></h2>
+      </div>
+
+      <div class="t-grid">
+
+        <div class="t-card reveal">
+          <div class="t-card__top">
+            <div class="t-card__photo">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&q=80&auto=format&fit=crop&crop=faces" alt="" />
+            </div>
+            <div class="t-card__stars">★★★★★</div>
+          </div>
+          <blockquote class="t-card__quote">
+            "The truffle pappardelle was extraordinary — like dining in Florence itself."
+          </blockquote>
+          <cite class="t-card__author">
+            <strong>Priya Menon</strong>
+            <span>Indiranagar · Regular Guest</span>
+          </cite>
+        </div>
+
+        <div class="t-card reveal reveal--delay-1">
+          <div class="t-card__top">
+            <div class="t-card__photo">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80&auto=format&fit=crop" alt="" />
+            </div>
+            <div class="t-card__stars">★★★★★</div>
+          </div>
+          <blockquote class="t-card__quote">
+            "We celebrated our anniversary here — staff remembered everything from our last visit. You're a guest, never just a table."
+          </blockquote>
+          <cite class="t-card__author">
+            <strong>Arjun &amp; Deepika Sharma</strong>
+            <span>Koramangala · Anniversary Dinner</span>
+          </cite>
+        </div>
+
+        <div class="t-card reveal reveal--delay-2">
+          <div class="t-card__top">
+            <div class="t-card__photo">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=200&q=80&auto=format&fit=crop" alt="" />
+            </div>
+            <div class="t-card__stars">★★★★★</div>
+          </div>
+          <blockquote class="t-card__quote">
+            "The wine pairings were impeccable. I've been to Italy three times — Chianti gives me that same feeling right here."
+          </blockquote>
+          <cite class="t-card__author">
+            <strong>Rohan Kapoor</strong>
+            <span>Whitefield · Wine Enthusiast</span>
+          </cite>
+        </div>
+
+        <div class="t-card reveal reveal--delay-1">
+          <div class="t-card__top">
+            <div class="t-card__photo">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=200&q=80&auto=format&fit=crop" alt="" />
+            </div>
+            <div class="t-card__stars">★★★★★</div>
+          </div>
+          <blockquote class="t-card__quote">
+            "The carbonara has no cream — just pure Roman technique. Worth every rupee."
+          </blockquote>
+          <cite class="t-card__author">
+            <strong>Meera Nair</strong>
+            <span>Jayanagar · Food Blogger</span>
+          </cite>
+        </div>
+
+        <div class="t-card reveal">
+          <div class="t-card__top">
+            <div class="t-card__photo">
+              <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=200&q=80&auto=format&fit=crop" alt="" />
+            </div>
+            <div class="t-card__stars">★★★★★</div>
+          </div>
+          <blockquote class="t-card__quote">
+            "I bring every out-of-town guest here. Seven years, never once let me down. That consistency is rare."
+          </blockquote>
+          <cite class="t-card__author">
+            <strong>Siddharth Rao</strong>
+            <span>HSR Layout · 7-Year Regular</span>
+          </cite>
+        </div>
+
+        <div class="t-card reveal reveal--delay-2">
+          <div class="t-card__top">
+            <div class="t-card__photo">
+              <img src="https://images.unsplash.com/photo-1574031377791-2a732edc1a72?w=200&q=80&auto=format&fit=crop" alt="" />
+            </div>
+            <div class="t-card__stars">★★★★★</div>
+          </div>
+          <blockquote class="t-card__quote">
+            "Torta Limone since 2015 — same recipe, same love. That's the Chianti promise."
+          </blockquote>
+          <cite class="t-card__author">
+            <strong>Kavitha &amp; Raj</strong>
+            <span>Malleswaram · Long-time Guests</span>
+          </cite>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <p class="footer__logo">Chianti</p>
+        <p class="footer__logo-sub">Ristorante &amp; Wine Bar</p>
+        <p class="footer__tag">#simplyauthentic</p>
+        <p class="footer__co">Grateful Bread Hospitality Pvt. Ltd.</p>
+        <a href="mailto:chiantibangalore@gmail.com" class="footer__email">chiantibangalore@gmail.com</a>
+        <div class="footer__socials">
+          <a href="#" class="footer__soc" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="footer__soc" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-h">Navigate</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">The Menu</a></li>
+          <li><a href="#whatsnew">What's New?</a></li>
+          <li><a href="#reservations">Reservations</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-h">Visit Us</h4>
+        <address class="footer__addr">
+          <p>Indiranagar, Bangalore</p>
+          <p>Karnataka — 560038</p>
+          <p style="margin-top:10px">+91 98765 43210</p>
+        </address>
+        <h4 class="footer__col-h" style="margin-top:28px">Hours</h4>
+        <p class="footer__hr">Mon–Fri &nbsp;12pm – 11pm</p>
+        <p class="footer__hr">Sat–Sun &nbsp;11am – 11pm</p>
+        <p class="footer__hr footer__hr--closed">Tuesday: Closed</p>
+      </div>
+
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2024 Grateful Bread Hospitality Pvt. Ltd. All rights reserved.</p>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
